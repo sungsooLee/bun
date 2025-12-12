@@ -24,7 +24,7 @@ const timeline = [
       <p class="text-base text-slate-500">
         Auto-generated routes are powered by Vite의
         <code>import.meta.glob</code>. Drop new `.vue` files into
-        <code>src/pages</code> and they are instantly available. 테스트 커밋
+        <code>src/pages</code> and they are instantly available. 테스트 커밋2
       </p>
     </header>
 
