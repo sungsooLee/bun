@@ -3,7 +3,7 @@ name: Deploy Vite App to GitHub Pages
 on:
   push:
     branches:
-      - master # <- 브랜치 확인
+      - master
 
 jobs:
   build-and-deploy:
@@ -36,3 +36,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
