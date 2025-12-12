@@ -31,6 +31,12 @@ jobs:
       - name: Build
         run: bun run build
 
+      # Git 사용자 정보 설정 추가
+      - name: Setup Git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
